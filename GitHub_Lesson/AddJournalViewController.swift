@@ -11,6 +11,12 @@ class AddJournalViewController: UIViewController {
     
     var previousVC = JournalTableViewController()
     
+    @IBOutlet weak var promptBox: UILabel!
+    
+        func randomText() -> String {
+        let prompts = ["What brings you joy?", "Describe a place where you felt happiest.", "If you are granted a wish, what would you wish for?", "Where do you see yourself in the next 10 years?", "Who is your hero?", "What was the best moment of your life?", "Who is someone you admire?", "What has inspired you?", "What are you grateful for?", "What are your long term goals?"]
+        return prompts[Int(arc4random_uniform(UInt32(prompts.count)))]
+    }
     @IBOutlet weak var journalTextField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,9 @@ class AddJournalViewController: UIViewController {
            
     }
     
+    @IBAction func promptButton(_ sender: Any) {
+        promptBox.text = randomText()
+    }
     /*
     // MARK: - Navigation
 
