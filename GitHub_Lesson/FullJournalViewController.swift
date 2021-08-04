@@ -8,13 +8,17 @@
 import UIKit
 
 class FullJournalViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+    var previousVC = JournalTableViewController()
+    var selectedJournal = Journal()
+    
+    @IBOutlet weak var fullJournal: UILabel!
+    
+    override func viewDidLoad() {
+      super.viewDidLoad()
+
+      fullJournal.text = selectedJournal.name
+    }
 
     /*
     // MARK: - Navigation

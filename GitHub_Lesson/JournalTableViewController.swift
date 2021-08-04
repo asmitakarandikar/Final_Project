@@ -39,14 +39,15 @@ class JournalTableViewController: UITableViewController {
 
         let journal = journals[indexPath.row]
         cell.textLabel?.text = journal.name
-        
-//        if editingStyle == UITableViewCell.EditingStyle.delete {
-//                journals.remove(at: indexPath.row)
-//                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-
         return cell
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+      // this gives us a single ToDo
+      let journal = journals[indexPath.row]
+
+      performSegue(withIdentifier: "moveToFull", sender: journal)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,6 +88,12 @@ class JournalTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addVC = segue.destination as? AddJournalViewController {
             addVC.previousVC = self
+          }
+        if let completeVC = segue.destination as? FullJournalViewController {
+            if let Journal = sender as? Journal {
+              completeVC.selectedJournal = Journal
+              completeVC.previousVC = self
+            }
           }
     }
     
