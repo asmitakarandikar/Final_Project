@@ -39,6 +39,10 @@ class JournalTableViewController: UITableViewController {
 
         let journal = journals[indexPath.row]
         cell.textLabel?.text = journal.name
+        
+//        if editingStyle == UITableViewCell.EditingStyle.delete {
+//                journals.remove(at: indexPath.row)
+//                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
 
         return cell
     }
@@ -79,14 +83,13 @@ class JournalTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let addVC = segue.destination as? AddJournalViewController {
+            addVC.previousVC = self
+          }
     }
-    */
+    
 
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F7B5E6B26BADB9800143A40 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B5E6A26BADB9800143A40 /* JournalTableViewController.swift */; };
 		4F7B5E6D26BADBE700143A40 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B5E6C26BADBE700143A40 /* Journal.swift */; };
+		4F7B5E7126BB0DF100143A40 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B5E7026BB0DF100143A40 /* AddJournalViewController.swift */; };
 		7D6D5A4526B98ECC00CC080F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D5A4426B98ECC00CC080F /* AppDelegate.swift */; };
 		7D6D5A4726B98ECC00CC080F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D5A4626B98ECC00CC080F /* SceneDelegate.swift */; };
 		7D6D5A4926B98ECC00CC080F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D5A4826B98ECC00CC080F /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		4F7B5E6A26BADB9800143A40 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		4F7B5E6C26BADBE700143A40 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		4F7B5E7026BB0DF100143A40 /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };
 		7D6D5A4126B98ECC00CC080F /* GitHub_Lesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub_Lesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6D5A4426B98ECC00CC080F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D6D5A4626B98ECC00CC080F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				7D6D5A4D26B98ECC00CC080F /* GitHub_Lesson.xcdatamodeld */,
 				4F7B5E6A26BADB9800143A40 /* JournalTableViewController.swift */,
 				4F7B5E6C26BADBE700143A40 /* Journal.swift */,
+				4F7B5E7026BB0DF100143A40 /* AddJournalViewController.swift */,
 			);
 			path = GitHub_Lesson;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				7D6D5A4926B98ECC00CC080F /* ViewController.swift in Sources */,
 				4F7B5E6B26BADB9800143A40 /* JournalTableViewController.swift in Sources */,
 				7D6D5A4526B98ECC00CC080F /* AppDelegate.swift in Sources */,
+				4F7B5E7126BB0DF100143A40 /* AddJournalViewController.swift in Sources */,
 				7D6D5A4726B98ECC00CC080F /* SceneDelegate.swift in Sources */,
 				4F7B5E6D26BADBE700143A40 /* Journal.swift in Sources */,
 			);
