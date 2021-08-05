@@ -20,6 +20,7 @@
 		7D6D5A5426B98ED600CC080F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6D5A5226B98ED600CC080F /* LaunchScreen.storyboard */; };
 		7D6D5A5F26B98ED800CC080F /* GitHub_LessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D5A5E26B98ED800CC080F /* GitHub_LessonTests.swift */; };
 		7D6D5A6A26B98ED800CC080F /* GitHub_LessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D5A6926B98ED800CC080F /* GitHub_LessonUITests.swift */; };
+		7D6D5A7826BC295000CC080F /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D5A7726BC295000CC080F /* QuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7D6D5A6526B98ED800CC080F /* GitHub_LessonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHub_LessonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6D5A6926B98ED800CC080F /* GitHub_LessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_LessonUITests.swift; sourceTree = "<group>"; };
 		7D6D5A6B26B98ED800CC080F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D6D5A7726BC295000CC080F /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				7D6D5A4626B98ECC00CC080F /* SceneDelegate.swift */,
 				7D6D5A4826B98ECC00CC080F /* ViewController.swift */,
 				7D6D5A4A26B98ECC00CC080F /* Main.storyboard */,
+				7D6D5A7726BC295000CC080F /* QuoteViewController.swift */,
 				7D6D5A5026B98ED600CC080F /* Assets.xcassets */,
 				7D6D5A5226B98ED600CC080F /* LaunchScreen.storyboard */,
 				7D6D5A5526B98ED600CC080F /* Info.plist */,
@@ -276,6 +279,7 @@
 				7D6D5A4F26B98ECC00CC080F /* GitHub_Lesson.xcdatamodeld in Sources */,
 				7D6D5A4926B98ECC00CC080F /* ViewController.swift in Sources */,
 				4F7B5E6B26BADB9800143A40 /* JournalTableViewController.swift in Sources */,
+				7D6D5A7826BC295000CC080F /* QuoteViewController.swift in Sources */,
 				7D6D5A4526B98ECC00CC080F /* AppDelegate.swift in Sources */,
 				4F7B5E7126BB0DF100143A40 /* AddJournalViewController.swift in Sources */,
 				7D6D5A4726B98ECC00CC080F /* SceneDelegate.swift in Sources */,
