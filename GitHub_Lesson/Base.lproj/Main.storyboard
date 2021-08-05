@@ -134,7 +134,6 @@
         <!--Mood View Controller-->
         <scene sceneID="WK8-1Y-M8z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="87k-2Q-QyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="DOz-sD-dmo" customClass="MoodViewController" customModule="GitHub_Lesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JfM-yG-cdK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -183,7 +182,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-Et-Fyd">
-                                <rect key="frame" x="20" y="228" width="255" height="101"/>
+                                <rect key="frame" x="80" y="315" width="255" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -191,6 +190,7 @@
                                             <attributes>
                                                 <color key="NSColor" red="0.024286135279999999" green="0.024286135279999999" blue="0.024286135279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="26" name="Courier"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -199,15 +199,8 @@
                                     <segue destination="61s-Dw-bZI" kind="show" id="wyt-YG-UmV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-SR-aiG">
-                                <rect key="frame" x="53" y="228" width="309" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Cu-Jc-8EH">
-                                <rect key="frame" x="27" y="262" width="240" height="30"/>
+                                <rect key="frame" x="87" y="350" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.024286135279999999" green="0.024286135279999999" blue="0.024286135279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
@@ -223,6 +216,51 @@
                                     <segue destination="61s-Dw-bZI" kind="show" id="egI-rR-AqT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-3s-kv8">
+                                <rect key="frame" x="43" y="669" width="52" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Happy">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP9-af-lzG">
+                                <rect key="frame" x="186" y="669" width="52" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Angry">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsq-yH-cEx">
+                                <rect key="frame" x="327" y="669" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Sad">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-SR-aiG">
+                                <rect key="frame" x="58" y="227" width="309" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qrh-oG-rbd"/>
                         <color key="backgroundColor" red="0.65098039220000004" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,20 +272,20 @@
                         <outlet property="ventButton" destination="9Cu-Jc-8EH" id="kYa-jE-Cja"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87k-2Q-QyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="765.40178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Resource View Controller-->
         <scene sceneID="lCP-QI-7VE">
             <objects>
-                <viewController id="c0d-dM-5Xb" sceneMemberID="viewController">
+                <viewController id="c0d-dM-5Xb" customClass="ResourceViewController" customModule="GitHub_Lesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="loR-js-45M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-4K-Ylw">
-                                <rect key="frame" x="28" y="149" width="359" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-4K-Ylw">
+                                <rect key="frame" x="28" y="90" width="358" height="38"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Resources">
@@ -259,15 +297,70 @@
                                 </attributedString>
                                 <color key="highlightedColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bce-VA-OBG">
+                                <rect key="frame" x="57" y="179" width="300" height="30"/>
+                                <state key="normal" title="https://www.nimh.nih.gov/health/find-help/"/>
+                                <connections>
+                                    <action selector="linkOne:" destination="c0d-dM-5Xb" eventType="touchUpInside" id="hc3-ME-cfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff4-8P-1bz">
+                                <rect key="frame" x="72" y="242" width="270" height="30"/>
+                                <state key="normal" title="https://www.nimh.nih.gov/health/topics/"/>
+                                <connections>
+                                    <action selector="linkTwo:" destination="c0d-dM-5Xb" eventType="touchUpInside" id="9A0-a6-GdX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-Ke-VNu">
+                                <rect key="frame" x="41" y="310" width="332" height="30"/>
+                                <state key="normal" title="https://www.mentalhealth.gov/talk/young-people"/>
+                                <connections>
+                                    <action selector="linkThree:" destination="c0d-dM-5Xb" eventType="touchUpInside" id="bnO-Eb-Skl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlZ-ha-sZZ">
+                                <rect key="frame" x="48" y="378" width="318" height="30"/>
+                                <state key="normal" title="https://medlineplus.gov/teenmentalhealth.html"/>
+                                <connections>
+                                    <action selector="linkFour:" destination="c0d-dM-5Xb" eventType="touchUpInside" id="ep2-uh-VXX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieQ-dk-JNQ">
+                                <rect key="frame" x="44" y="451" width="326" height="30"/>
+                                <state key="normal" title="https://www.kidshealth.org/en/teens/your-mind/"/>
+                                <connections>
+                                    <action selector="linkFive:" destination="c0d-dM-5Xb" eventType="touchUpInside" id="dmh-Mw-7Pb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qgt-GA-KJg"/>
                         <color key="backgroundColor" red="0.65098039220000004" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qgt-GA-KJg" firstAttribute="trailing" secondItem="TlZ-ha-sZZ" secondAttribute="trailing" constant="48" id="1bi-1a-Z03"/>
+                            <constraint firstItem="qgt-GA-KJg" firstAttribute="trailing" secondItem="wx5-Ke-VNu" secondAttribute="trailing" constant="41" id="2aI-Bm-8wP"/>
+                            <constraint firstItem="Bce-VA-OBG" firstAttribute="leading" secondItem="qgt-GA-KJg" secondAttribute="leading" constant="57" id="4cX-xv-yIj"/>
+                            <constraint firstItem="dJL-4K-Ylw" firstAttribute="leading" secondItem="qgt-GA-KJg" secondAttribute="leading" constant="28" id="5aJ-s0-YcA"/>
+                            <constraint firstItem="qgt-GA-KJg" firstAttribute="trailing" secondItem="Bce-VA-OBG" secondAttribute="trailing" constant="57" id="7gN-Y7-Okc"/>
+                            <constraint firstItem="ieQ-dk-JNQ" firstAttribute="leading" secondItem="qgt-GA-KJg" secondAttribute="leading" constant="44" id="9p6-As-YdX"/>
+                            <constraint firstItem="qgt-GA-KJg" firstAttribute="trailing" secondItem="Ff4-8P-1bz" secondAttribute="trailing" constant="72" id="BXx-nB-25h"/>
+                            <constraint firstItem="wx5-Ke-VNu" firstAttribute="top" secondItem="Ff4-8P-1bz" secondAttribute="bottom" constant="38" id="Ftz-F7-ZUQ"/>
+                            <constraint firstItem="TlZ-ha-sZZ" firstAttribute="top" secondItem="wx5-Ke-VNu" secondAttribute="bottom" constant="38" id="KSS-s1-DJ7"/>
+                            <constraint firstItem="Ff4-8P-1bz" firstAttribute="leading" secondItem="qgt-GA-KJg" secondAttribute="leading" constant="72" id="L18-uY-k7J"/>
+                            <constraint firstItem="Ff4-8P-1bz" firstAttribute="top" secondItem="Bce-VA-OBG" secondAttribute="bottom" constant="33" id="R9C-ZQ-0bv"/>
+                            <constraint firstItem="wx5-Ke-VNu" firstAttribute="leading" secondItem="qgt-GA-KJg" secondAttribute="leading" constant="41" id="UbH-AL-zVv"/>
+                            <constraint firstItem="TlZ-ha-sZZ" firstAttribute="leading" secondItem="qgt-GA-KJg" secondAttribute="leading" constant="48" id="b3W-fh-ENs"/>
+                            <constraint firstItem="qgt-GA-KJg" firstAttribute="trailing" secondItem="dJL-4K-Ylw" secondAttribute="trailing" constant="28" id="cYQ-VX-sDh"/>
+                            <constraint firstItem="Bce-VA-OBG" firstAttribute="top" secondItem="dJL-4K-Ylw" secondAttribute="bottom" constant="51" id="eb0-91-PQy"/>
+                            <constraint firstItem="qgt-GA-KJg" firstAttribute="trailing" secondItem="ieQ-dk-JNQ" secondAttribute="trailing" constant="44" id="iNr-Pp-5Fd"/>
+                            <constraint firstItem="ieQ-dk-JNQ" firstAttribute="top" secondItem="TlZ-ha-sZZ" secondAttribute="bottom" constant="43" id="ka4-e2-0LK"/>
+                            <constraint firstItem="dJL-4K-Ylw" firstAttribute="top" secondItem="qgt-GA-KJg" secondAttribute="top" constant="90" id="qLo-AX-64Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V1J-i5-fLk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIn-v3-39A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="757"/>
+            <point key="canvasLocation" x="866.66666666666674" y="756.69642857142856"/>
         </scene>
         <!--Quote View Controller-->
         <scene sceneID="b6k-CJ-jRg">
