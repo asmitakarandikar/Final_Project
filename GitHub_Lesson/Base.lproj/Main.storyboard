@@ -95,29 +95,91 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Mood View Controller-->
         <scene sceneID="WK8-1Y-M8z">
             <objects>
-                <viewController id="DOz-sD-dmo" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87k-2Q-QyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="DOz-sD-dmo" customClass="MoodViewController" customModule="GitHub_Lesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JfM-yG-cdK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-zu-zmf">
-                                <rect key="frame" x="35" y="145" width="359" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-zu-zmf">
+                                <rect key="frame" x="24" y="62" width="366" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="How are you feeling?">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white background" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-f4-dYD">
+                                <rect key="frame" x="0.0" y="488" width="414" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-HS-Gix">
+                                <rect key="frame" x="-5" y="549" width="138" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="happyMood"/>
+                                <connections>
+                                    <action selector="happyButton:" destination="DOz-sD-dmo" eventType="touchUpInside" id="1Lw-lp-9B8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDV-mB-zwe">
+                                <rect key="frame" x="141" y="549" width="133" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="angryMood"/>
+                                <connections>
+                                    <action selector="angryButton:" destination="DOz-sD-dmo" eventType="touchUpInside" id="QTC-4H-EtL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUl-lp-kGB">
+                                <rect key="frame" x="282" y="551" width="132" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sadMood"/>
+                                <connections>
+                                    <action selector="sadButton:" destination="DOz-sD-dmo" eventType="touchUpInside" id="VuH-hx-8Y2"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-Et-Fyd">
+                                <rect key="frame" x="166" y="310" width="137" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Celebrate it!"/>
+                                <connections>
+                                    <segue destination="61s-Dw-bZI" kind="show" id="wyt-YG-UmV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-SR-aiG">
+                                <rect key="frame" x="53" y="228" width="309" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cu-Jc-8EH">
+                                <rect key="frame" x="172" y="381" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Vent it out"/>
+                                <connections>
+                                    <segue destination="61s-Dw-bZI" kind="show" id="egI-rR-AqT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qrh-oG-rbd"/>
                         <color key="backgroundColor" red="0.65098039220000004" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="a5s-la-Kc2"/>
+                    <connections>
+                        <outlet property="celebrateButton" destination="eeI-Et-Fyd" id="xPk-6D-1Zi"/>
+                        <outlet property="resultMood" destination="pRe-SR-aiG" id="8u5-Gi-Wmy"/>
+                        <outlet property="ventButton" destination="9Cu-Jc-8EH" id="kYa-jE-Cja"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="87k-2Q-QyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="765.40178571428567"/>
         </scene>
@@ -359,8 +421,15 @@
             <point key="canvasLocation" x="1718.840579710145" y="87.723214285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="egI-rR-AqT"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="angryMood" width="419" height="337"/>
         <image name="doodleBorder" width="386" height="512"/>
+        <image name="happyMood" width="447" height="344"/>
+        <image name="sadMood" width="388" height="299"/>
+        <image name="white background" width="294" height="172"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
